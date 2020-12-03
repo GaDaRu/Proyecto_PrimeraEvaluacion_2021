@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/principal">
+
+    <fragment
+        android:id="@+id/principal"
+        android:name="com.example.proyectofin.ui.principal.BlankFragment1"
+        android:label="@string/Titulo"
+        tools:layout="@layout/blank_fragment1_fragment" >
+        <action
+            android:id="@+id/action_principal_to_anadirArti"
+            app:destination="@id/anadirArti" />
+        <action
+            android:id="@+id/action_principal_to_anadirExposiciones"
+            app:destination="@id/anadirExposiciones" />
+        <action
+            android:id="@+id/action_principal_to_anadirExposicion"
+            app:destination="@id/anadirExposicion" />
+        <action
+            android:id="@+id/action_principal_to_anadirTrabajo"
+            app:destination="@id/anadirTrabajo" />
+        <action
+            android:id="@+id/action_principal_to_anadirComentario"
+            app:destination="@id/anadirComentario" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/anadirArti"
+        android:name="com.example.proyectofin.anArtista.anadirArtista"
+        android:label="Añadir Artista"
+        tools:layout="@layout/anadir_artista_fragment"
+        />
+
+    <fragment
+        android:id="@+id/anadirExposiciones"
+        android:name="com.example.proyectofin.anArtista.anadirExposiciones"
+        android:label="Añadir Exposicion"
+        tools:layout="@layout/anadir_exposiciones_fragment"
+        />
+
+    <fragment
+        android:id="@+id/anadirExposicion"
+        android:name="com.example.proyectofin.anArtista.anadirExponen"
+        android:label="Añadir Exponen"
+        tools:layout="@layout/anadir_exponen_fragment"
+        />
+
+    <fragment
+        android:id="@+id/anadirTrabajo"
+        android:name="com.example.proyectofin.anArtista.anadirTrabajos"
+        android:label="Añadir Trabajo"
+        tools:layout="@layout/anadir_trabajos_fragment"
+        />
+
+    <fragment
+        android:id="@+id/anadirComentario"
+        android:name="com.example.proyectofin.anArtista.anadirComentario"
+        android:label="Añadir Comentario"
+        tools:layout="@layout/anadir_comentario_fragment"
+        />
+
+    <fragment
+        android:id="@+id/mostrarArti"
+        android:name="com.example.proyectofin.ui.principal.VistaArtistas"
+        android:label="Ver Artista"
+        tools:layout="@layout/vista_artistas_fragment"
+        />
+
+    <fragment
+        android:id="@+id/verArti"
+        android:name="com.example.proyectofin.ui.principal.VistaArtista"
+        android:label="Ver Artista"
+        tools:layout="@layout/vista_artista_fragment"
+        />
+
+    <fragment
+        android:id="@+id/verTrabajo"
+        android:name="com.example.proyectofin.ui.principal.VistaTrabajo"
+        android:label="Ver Trabajo"
+        tools:layout="@layout/vista_trabajo_fragment"
+        />
+</navigation>

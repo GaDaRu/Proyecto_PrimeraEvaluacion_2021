@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/anadirArtista"
+            android:orderInCategory="100"
+            android:title="@string/anadirArtista" />
+
+        <item
+            android:id="@+id/anadirExposicion"
+            android:orderInCategory="100"
+            android:title="@string/anadirExposiciones"/>
+
+        <item
+            android:id="@+id/anadirTrabajos"
+            android:orderInCategory="100"
+            android:title="@string/anadirTrabajos"/>
+
+        <item
+            android:id="@+id/anadirComentarios"
+            android:orderInCategory="100"
+            android:title="@string/anadirComentarios"/>
+
+        <item
+            android:id="@+id/anadirExponen"
+            android:orderInCategory="100"
+            android:title="@string/anadirExponen" />
+    </group>
+</menu>
